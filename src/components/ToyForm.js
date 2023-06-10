@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ToyForm({onCreateToy}) {
+function ToyForm({ onCreateToy }) {
   const [formData, setFormData] = useState({
     name: "",
     image: "",
@@ -28,8 +28,8 @@ function ToyForm({onCreateToy}) {
       },
       body: JSON.stringify(toyData),
     })
-    .then((response) => response.json())
-    .then((data) => onCreateToy(data));
+      .then((response) => response.json())
+      .then((data) => onCreateToy(data));
   }
 
   return (

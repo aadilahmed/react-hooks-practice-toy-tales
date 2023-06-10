@@ -10,8 +10,8 @@ function App() {
 
   useEffect(() => {
     fetch("http://localhost:3001/toys")
-    .then((response) => response.json())
-    .then((data) => setToys(data));
+      .then((response) => response.json())
+      .then((data) => setToys(data));
   }, []);
 
   function handleAddToy(newToy) {
@@ -41,11 +41,15 @@ function App() {
   return (
     <>
       <Header />
-      {showForm ? <ToyForm onCreateToy={handleAddToy}/> : null}
+      {showForm ? <ToyForm onCreateToy={handleAddToy} /> : null}
       <div className="buttonContainer">
         <button onClick={handleClick}>Add a Toy</button>
       </div>
-      <ToyContainer toys={toys} onDeleteToy={handleDeleteToy} onUpdateToy={handleUpdateToy}/>
+      <ToyContainer
+        toys={toys}
+        onDeleteToy={handleDeleteToy}
+        onUpdateToy={handleUpdateToy}
+      />
     </>
   );
 }
