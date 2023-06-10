@@ -46,7 +46,13 @@
       "id": 8,
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
-      "likes": -2
+      "likes": 0
+    },
+    {
+      "name": "Lotso",
+      "image": "https://i.etsystatic.com/21091952/r/il/609845/3810680046/il_340x270.3810680046_aayg.jpg",
+      "likes": 3,
+      "id": 16
     }
   ]
 }
